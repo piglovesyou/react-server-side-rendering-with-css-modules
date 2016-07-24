@@ -1,0 +1,51 @@
+{
+  "name": "react-server-side-rendering-with-css-module",
+  "version": "0.0.0",
+  "scripts": {
+    "start": "node ./lib/main",
+    "dev": "babel-node ./src/main",
+    "test": "curl --fail --silent --show-error --output /dev/null localhost:3000",
+    "prepublish": "babel -d lib src; webpack"
+  },
+  "engines": {
+    "node": "6.x"
+  },
+  "description": "My site.",
+  "dependencies": {
+    "body-parser": "~1.13.2",
+    "compression": "^1.6.2",
+    "cookie-parser": "~1.3.5",
+    "css-loader": "^0.23.1",
+    "express": "~4.13.1",
+    "express-react-views": "^0.10.2",
+    "morgan": "~1.6.1",
+    "q": "^1.4.1",
+    "react": "^15.2.0",
+    "react-dom": "^15.2.0",
+    "serve-favicon": "~2.3.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.10.1",
+    "babel-core": "^6.7.2",
+    "babel-eslint": "^6.0.4",
+    "babel-loader": "^6.2.4",
+    "babel-plugin-transform-async-to-generator": "^6.7.4",
+    "babel-plugin-transform-class-properties": "^6.6.0",
+    "babel-plugin-transform-es2015-classes": "^6.7.7",
+    "babel-plugin-transform-es2015-modules-commonjs": "^6.7.7",
+    "babel-preset-react": "^6.5.0",
+    "blacklist": "^1.1.4",
+    "compression-webpack-plugin": "^0.3.1",
+    "extract-text-webpack-plugin": "^1.0.1",
+    "flux": "^2.1.1",
+    "node-sass-middleware": "0.8.0",
+    "style-loader": "^0.13.1",
+    "webpack": "^1.13.1",
+    "webpack-dev-middleware": "^1.6.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/piglovesyou/react-server-side-rendering-with-css-modules.git"
+  },
+  "license": "ISC"
+}

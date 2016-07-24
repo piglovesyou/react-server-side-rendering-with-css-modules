@@ -1,0 +1,37 @@
+$small:  "only screen and (max-width:640px)";
+$middle: "only screen and (min-width:641px) and (max-width:959px)";
+$large:  "only screen and (min-width:960px)";
+
+body
+  padding: 48px
+  @media #{$small}
+    padding: 16px
+  font-size: 14px
+  font-family: "ヒラギノ明朝 ProN W6", "HiraMinProN-W6", "HG明朝E", "ＭＳ Ｐ明朝", "MS PMincho", "MS 明朝", serif;
+
+a
+  color: #00B7FF
+
+*
+  box-sizing: border-box
+
+.application
+
+.title
+  margin-top: 0
+  @media #{$small}
+    width: 100%
+
+.tweets-wrap
+  display: flex
+
+.tweets
+  flex: 1
+  overflow: hidden
+
+.tweets li
+  line-height: 1.8
+  white-space: nowrap
+  .hilited
+    padding: 2px
+    border: 1px #00B7FF solid

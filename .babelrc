@@ -5,6 +5,13 @@
   "plugins": [
     "transform-es2015-modules-commonjs",
     "transform-es2015-classes",
-    "transform-async-to-generator"
+    "transform-async-to-generator",
+    [
+      "babel-plugin-webpack-loaders",
+      {
+        "config": "./webpack-config/server.js",
+        "verbose": false
+      }
+    ]
   ]
 }

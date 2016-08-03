@@ -4,49 +4,59 @@ import favicon from 'serve-favicon';
 import logger from 'morgan';
 // import bodyParser from 'body-parser';
 // import cookieParser from 'cookie-parser';
-import sassMiddleware from 'node-sass-middleware';
 import webpackDevMiddleware from "webpack-dev-middleware";
 import webpack from "webpack";
-import webpackConfig from '../webpack.config';
-import expressReactViews from 'express-react-views';
+import webpackConfig from '../webpack-config/client';
 import compression from 'compression';
+import layout from './layout';
+import glob from 'glob';
 
 const isProduction = process.env.NODE_ENV === 'production';
 const app = express();
 
 app.set('port', normalizePort(process.env.PORT || '3000'));
-app.set('views', `${__dirname}/components`);
-app.set('view engine', 'js');
 
-app.engine('js', expressReactViews.createEngine({ transformViews: false }));
 app.use(logger('dev'));
 // app.use(bodyParser.json());
 // app.use(bodyParser.urlencoded({ extended: false }));
 // app.use(cookieParser());
 
 if (!isProduction) {
-  app.use(sassMiddleware({
-    src: Path.join(__dirname, './sass'),
-    dest: Path.join(__dirname, '../public/stylesheets'),
-    prefix: '/stylesheets',
-    debug: true,
-    indentedSyntax: true,
-    sourceMap: true
-  }));
-  app.use(webpackDevMiddleware(webpack(Object.assign(webpackConfig, {
-    output: { path: '/', filename: 'javascripts/main.js' }
-  })), {}));
+  Object.assign(webpackConfig.output, { path: '/' });
+  app.use(webpackDevMiddleware(webpack(webpackConfig), {}));
 } else {
   app.use(compression());
 }
 
 app.use(express.static(Path.join(__dirname, '../public')));
 
-app.get('/', async (req, res) => {
-  res.render('index', {
-    title: 'Express',
-    messages: ['yeah!', 'baam!', 'baaa!']
-  });
+import React from 'react';
+import { renderToString } from 'react-dom/server';
+import { match, RouterContext } from 'react-router'
+import routes from './router';
+import Store from './stores/application';
+
+app.get('*', (req, res) => {
+  match({ routes, location: req.url }, (error, redirectLocation, renderProps) => {
+    if (error) {
+      res.status(500).send(error.message)
+    } else if (redirectLocation) {
+      res.redirect(302, redirectLocation.pathname + redirectLocation.search)
+    } else if (renderProps) {
+      const data = {
+        title: 'Express',
+        messages: ['yeah!', 'baam!', 'baaa!'],
+      };
+      // Injection point of initial data in server-side.
+      // XXX: Other way?
+      Store._state = data;
+      const html = renderToString(<RouterContext {...renderProps} />);
+      Store._state = null;
+      res.status(200).send(layout([data, html]));
+    } else {
+      res.status(404).send('Not found')
+    }
+  })
 });
 
 // catch 404 and forward to error handler
@@ -62,11 +72,11 @@ app.use((req, res, next) => {
 // will print stacktrace
 if (app.get('env') === 'development') {
   app.use((err, req, res, next) => {
+    console.error(err);
     res.status(err.status || 500);
-    res.render('error', {
-      message: err.message,
-      error: err
-    });
+    res.send(`${err.message}
+
+${err.stack}`);
   });
 }
 
@@ -74,10 +84,7 @@ if (app.get('env') === 'development') {
 // no stacktraces leaked to user
 app.use((err, req, res, next) => {
   res.status(err.status || 500);
-  res.render('error', {
-    message: err.message,
-    error: {}
-  });
+  res.send('error;)');
 });
 
 export default app;

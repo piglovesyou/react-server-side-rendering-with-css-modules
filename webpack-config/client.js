@@ -1,10 +1,11 @@
+const isProduction = process.env.NODE_ENV === 'production';
+
 const webpack = require('webpack');
 const Path = require('path');
 const FS = require('fs');
-const babelRc = JSON.parse(FS.readFileSync('./.babelrc'));
-const isProduction = process.env.NODE_ENV === 'production';
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const CompressionPlugin = require("compression-webpack-plugin");
+const cssLoaderConfig = require('./css-loader')[isProduction ? 'production' : 'develop'];
 
 module.exports = {
   entry: './src/client',
@@ -19,18 +20,34 @@ module.exports = {
         test: /\.jsx?$/,
         exclude: /(node_modules|bower_components)/,
         loader: 'babel',
-        query: babelRc,
+        query: {
+          "presets": [ "react" ],
+          "plugins": [
+            "transform-es2015-classes",
+            "transform-async-to-generator",
+            "transform-es2015-modules-commonjs",
+          ],
+          "babelrc": false
+        },
       },
       {
         test: /\.sass$/,
-        loader: ExtractTextPlugin.extract("style-loader", "css-loader!sass-loader")
+        // loaders: [
+        //   cssLoaderConfig,
+        //   'sass',
+        // ],
+        loader: ExtractTextPlugin.extract([
+          cssLoaderConfig,
+          'sass-loader',
+        ]),
       },
     ]
   },
+  sassLoader: {
+    indentedSyntax: true,
+  },
   plugins: [
-    new ExtractTextPlugin('stylesheets/main.css', {
-      allChunks: true
-    }),
+    new ExtractTextPlugin('stylesheets/main.css'),
     new CompressionPlugin({
         asset: "[path].gz[query]",
         algorithm: "gzip",

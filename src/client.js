@@ -1,11 +1,10 @@
-import React from 'react';
 import {render} from 'react-dom';
-import Application from './components/application';
+import Store from './stores/application';
+import router from './router';
 
-// require('./sass/main.sass');
+import './sass/global.sass';
 
-const el = document.getElementById('application-container');
-const initialData = JSON.parse(el.dataset.json);
-render(<Application {...JSON.parse(el.dataset.json)} />, el);
-delete el.dataset.json;
+// Injection point of initial data in client-side.
+Object.assign(Store._state, window.__initialData);
 
+render(router, document.getElementById('application-container'));

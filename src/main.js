@@ -1,1 +1,1 @@
-import "./server";
+require('./server');

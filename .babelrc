@@ -3,8 +3,13 @@
     "react"
   ],
   "plugins": [
-    "transform-es2015-modules-commonjs",
     "transform-es2015-classes",
-    "transform-async-to-generator"
+    [
+      "babel-plugin-webpack-loaders",
+      {
+        "config": "./webpack-configs/server.js",
+        "verbose": false
+      }
+    ]
   ]
 }

@@ -34,4 +34,8 @@ npm-debug.log
 test.js
 
 /lib
-/public
+/public/javascripts
+/public/stylesheets
+/errorShots
+
+/.idea

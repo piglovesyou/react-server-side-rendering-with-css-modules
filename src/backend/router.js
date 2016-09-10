@@ -7,6 +7,7 @@ import { renderToString } from 'react-dom/server';
 let layout;
 let routes;
 let Store;
+loadModules_();
 
 export default reactRouter;
 export const unloadModules = (_, __, next) => (unloadModules_(), next());

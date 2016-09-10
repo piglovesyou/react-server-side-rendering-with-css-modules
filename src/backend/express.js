@@ -29,38 +29,28 @@ if (isProduction) {
 
 app.use(express.static(Path.join(__dirname, '../../public')));
 
-if (isProduction) {
-  app.get('*', router);
-} else {
-  app.get('*', [unloadModules, loadModules, router]);
-}
+// Handle browser GET accesses
+app.get('*', isProduction
+    ? router
+    : [unloadModules, loadModules, router]);
 
-// catch 404 and forward to error handler
+// Handle 404
 app.use((req, res, next) => {
   const err = new Error(`"${req.url}" Not Found`);
   err.status = 404;
   next(err);
 });
 
-// error handlers
-
-// development error handler
-// will print stacktrace
-if (!isProduction) {
-  app.use((err, req, res, next) => {
-    console.error(err);
-    res.status(err.status || 500);
-    res.send(`${err.message}
-
-${err.stack}`);
-  });
-}
-
-// production error handler
-// no stacktraces leaked to user
-app.use((err, req, res, next) => {
+// Handle errors
+app.use(isProduction ? (err, req, res, next) => {
   res.status(err.status || 500);
   res.send('error;)');
+} : (err, req, res, next) => {
+  console.error(err);
+  res.status(err.status || 500);
+  res.send(`${err.message}
+
+${err.stack}`);
 });
 
 export default app;

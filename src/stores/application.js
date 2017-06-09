@@ -14,7 +14,7 @@ class Store extends ReduceStore {
       newState = Object.assign({}, state, {
         messages: state.messages.concat(randomMessage())
       });
-      console.log(newState.messages)
+      console.log(newState.messages);
       break;
     }
     return newState;

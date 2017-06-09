@@ -14,7 +14,7 @@ export const unloadModules = (_, __, next) => (unloadModules_(), next());
 export const loadModules = (_, __, next) => (loadModules_(), next());
 
 function unloadModules_() {
-  var srcPath = Path.resolve(__dirname, '..');
+  const srcPath = Path.resolve(__dirname, '..');
   Object.keys(require.cache)
     .filter(m => m.startsWith(srcPath))
     .forEach(m => delete require.cache[m]);

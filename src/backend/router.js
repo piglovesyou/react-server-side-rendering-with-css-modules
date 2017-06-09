@@ -40,7 +40,7 @@ function reactRouter(req, res, next) {
       // Injection point of initial data in server-side.
       // XXX: Other way?
       Store._state = data;
-      const html = renderToString(<RouterContext {...renderProps} />);
+      const html = renderToString(React.createElement(RouterContext, renderProps));
       Store._state = null;
       res.status(200).send(layout([data, html]));
     } else {

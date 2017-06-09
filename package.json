@@ -11,7 +11,7 @@
     "prepublish": "NODE_ENV=production npm run build"
   },
   "engines": {
-    "node": "6.x"
+    "node": "7.x"
   },
   "description": "React server-side rendering with CSS modules example",
   "dependencies": {

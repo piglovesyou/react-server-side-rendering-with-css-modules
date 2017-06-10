@@ -20,14 +20,25 @@ module.exports = {
         exclude: /(node_modules|bower_components)/,
         loader: 'babel-loader',
         query: {
-          "presets": [ "react" ],
+          "presets": ["react"],
           "plugins": [
             "transform-es2015-classes",
-            "transform-async-to-generator",
-            "transform-es2015-modules-commonjs",
           ],
           "babelrc": false
         },
+      },
+      {
+        // XXX: Workaround for libsass bug that doesn't recognize ":global()".
+        test: /\.scss$/,
+        loader: ExtractTextPlugin.extract([
+          cssLoaderConfig,
+          {
+            loader: 'sass-loader',
+            options: {
+              indentedSyntax: false,
+            }
+          },
+        ]),
       },
       {
         test: /\.sass$/,
@@ -46,26 +57,11 @@ module.exports = {
   plugins: [
     new ExtractTextPlugin('stylesheets/main.css'),
     new CompressionPlugin({
-        asset: "[path].gz[query]",
-        algorithm: "gzip",
-        test: /\.js$|\.html$/,
-        threshold: 10240,
-        minRatio: 0.8
+      asset: "[path].gz[query]",
+      algorithm: "gzip",
+      test: /\.js$|\.html$/,
+      threshold: 10240,
+      minRatio: 0.8
     }),
   ],
-  // // It suppress error shown in console, so it has to be set to false.
-  // quiet: true,
-  // // It suppress everything except error, so it has to be set to false as well
-  // // to see success build.
-  // noInfo: true,
-  // stats: {
-  //   // Config for minimal console.log mess.
-  //   assets: false,
-  //   colors: true,
-  //   version: false,
-  //   hash: false,
-  //   timings: false,
-  //   chunks: false,
-  //   chunkModules: false
-  // },
 };

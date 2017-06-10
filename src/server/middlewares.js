@@ -1,10 +1,29 @@
-require('babel-register'); // For only JSXs in '../components'
+const FS = require('fs');
+const Path = require('path');
+const deepmerge = require('deepmerge');
+const babelrc = JSON.parse(FS.readFileSync(Path.resolve(__dirname, '../../.babelrc')));
+const isProduction = process.env.NODE_ENV === 'production';
+
+// Applied only for JSXs in '../components'
+const conf = Object.assign(babelrc, {
+  only: Path.resolve(__dirname, '../client/components'),
+  plugins: babelrc.plugins.concat([
+    ["babel-plugin-webpack-loaders", {
+      "config": Path.resolve(__dirname, '../../transpile-configs/server.js'),
+      "verbose": false
+    }]
+  ]),
+  babelrc: false
+});
+
+const util = require('util');
+console.log(util.inspect(conf, {depth: 100}));
+
+require('babel-register')(conf);
 
 const React = require('react');
-const Path = require('path');
 const {StaticRouter, matchPath,} = require('react-router');
 const {renderToString} = require('react-dom/server');
-const isProduction = process.env.NODE_ENV === 'production';
 
 module.exports.default = isProduction
     ? defaultRouteMiddleware

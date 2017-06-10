@@ -8,8 +8,6 @@ const webpack = require('webpack');
 const webpackConfig = require('../../transpile-configs/client');
 const middlewares = require('./middlewares').default;
 
-console.log(middlewares);
-
 const isProduction = process.env.NODE_ENV === 'production';
 const app = express();
 app.set('port', normalizePort(process.env.PORT || '3000'));

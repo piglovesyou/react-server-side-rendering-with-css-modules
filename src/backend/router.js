@@ -1,12 +1,10 @@
 const React = require('react');
 const Path = require('path');
-// const { StaticRouter } = require('react-router-dom');
 const {StaticRouter, matchPath,} = require('react-router');
 const {renderToString} = require('react-dom/server');
 
 // For module reloading on dev
 let layout;
-let routes;
 let Store;
 let Application;
 loadModules_();
@@ -48,7 +46,6 @@ function unloadModules_() {
 
 function loadModules_() {
   layout = require('../layout').default;
-  routes = require('../router').default;
   Store = require('../stores/application').default;
   Application = require('../components/application').default;
 }

@@ -12,7 +12,7 @@ const isProduction = process.env.NODE_ENV === 'production';
 const app = express();
 app.set('port', normalizePort(process.env.PORT || '3000'));
 app.use(logger('dev'));
-// app.use(favicon(Path.resolve(__dirname, './favicon.ico')));
+app.use(favicon(Path.resolve(__dirname, '../../public/favicon.ico')));
 
 // import bodyParser from 'body-parser';
 // import cookieParser from 'cookie-parser';

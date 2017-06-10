@@ -4,9 +4,20 @@ const React = require('react');
 const Path = require('path');
 const {StaticRouter, matchPath,} = require('react-router');
 const {renderToString} = require('react-dom/server');
+const isProduction = process.env.NODE_ENV === 'production';
 
+module.exports.default = isProduction
+    ? defaultRouteMiddleware
+    : [unloadModulesMiddleware, defaultRouteMiddleware];
+
+// Deprecated
 module.exports.defaultRouteMiddleware = defaultRouteMiddleware;
 module.exports.unloadModulesMiddleware = (_, __, next) => (unloadModules_(), next());
+
+function unloadModulesMiddleware(_, __, next) {
+  unloadModules_();
+  next();
+}
 
 function defaultRouteMiddleware(req, res) {
   const data = {

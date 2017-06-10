@@ -7,7 +7,7 @@ const webpackDevMiddleware = require('webpack-dev-middleware');
 const webpack = require('webpack');
 const glob = require('glob');
 const webpackConfig = require('../../webpack-config/client');
-const {defaultRouteMiddleware, loadModulesMiddleware, unloadModulesMiddleware} = require('./router');
+const {defaultRouteMiddleware, unloadModulesMiddleware} = require('./router');
 
 const isProduction = process.env.NODE_ENV === 'production';
 const app = express();
@@ -33,7 +33,7 @@ app.use(express.static(Path.join(__dirname, '../../public')));
 // Handle browser GET accesses
 app.get('*', isProduction
     ? defaultRouteMiddleware
-    : [unloadModulesMiddleware, loadModulesMiddleware, defaultRouteMiddleware]);
+    : [unloadModulesMiddleware, defaultRouteMiddleware]);
 
 // Handle 404
 app.use((req, res, next) => {

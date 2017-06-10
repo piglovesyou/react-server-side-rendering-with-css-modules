@@ -1,4 +1,4 @@
-import assert from 'assert';
+const assert = require('assert');
 
 describe('react-server-side-rendering-with-css-modules example', () => {
   it('launches correctly', () => {

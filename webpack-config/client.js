@@ -7,7 +7,7 @@ const CompressionPlugin = require("compression-webpack-plugin");
 const cssLoaderConfig = require('./css-loader')[isProduction ? 'production' : 'develop'];
 
 module.exports = {
-  entry: './src/client',
+  entry: './src/client/main',
   output: {
     path: Path.resolve('./public'),
     filename: 'javascripts/main.js'

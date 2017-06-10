@@ -1,5 +1,5 @@
 {
-  "only": "./src/components",
+  "only": "./src/client/components",
   "presets": [
     "react"
   ],

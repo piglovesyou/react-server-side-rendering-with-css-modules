@@ -5,13 +5,8 @@
     <option name="CUSTOM_SCOPE_NAME" value="Default" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5059f2ca-f28d-410c-836e-223a3ead6deb" name="Default" comment="m">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/dictionaries/pig.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.babelrc" afterPath="$PROJECT_DIR$/.babelrc" />
+    <list default="true" id="5059f2ca-f28d-410c-836e-223a3ead6deb" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/client/stores/application.js" afterPath="$PROJECT_DIR$/src/client/stores/application.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/server/express.js" afterPath="$PROJECT_DIR$/src/server/express.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/server/middlewares.js" afterPath="$PROJECT_DIR$/src/server/middlewares.js" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -39,8 +34,8 @@
           <file leaf-file-name="middlewares.js" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/server/middlewares.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="240">
-                  <caret line="16" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="16" selection-end-column="3" />
+                <state relative-caret-position="285">
+                  <caret line="19" column="3" lean-forward="false" selection-start-line="19" selection-start-column="3" selection-end-line="19" selection-end-column="3" />
                   <folding />
                 </state>
               </provider>
@@ -83,8 +78,8 @@
           <file leaf-file-name="middlewares.js" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/server/middlewares.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="255">
-                  <caret line="27" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="16" selection-end-column="3" />
+                <state relative-caret-position="210">
+                  <caret line="26" column="0" lean-forward="false" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
                   <folding />
                 </state>
               </provider>
@@ -1060,11 +1055,18 @@
       <option name="project" value="LOCAL" />
       <updated>1497098667922</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="done: minimum babel config in babel-register">
+      <created>1497100499080</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1497100499080</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="49504000" />
+    <option name="totallyTimeSpent" value="49619000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="396" y="23" width="1524" height="1053" extended-state="0" />
@@ -1159,7 +1161,8 @@
     <MESSAGE value="make jsx loading simpler" />
     <MESSAGE value="test action" />
     <MESSAGE value="m" />
-    <option name="LAST_COMMIT_MESSAGE" value="m" />
+    <MESSAGE value="done: minimum babel config in babel-register" />
+    <option name="LAST_COMMIT_MESSAGE" value="done: minimum babel config in babel-register" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1421,8 +1424,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/server/middlewares.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="16" selection-end-column="3" />
+        <state relative-caret-position="285">
+          <caret line="19" column="3" lean-forward="false" selection-start-line="19" selection-start-column="3" selection-end-line="19" selection-end-column="3" />
           <folding />
         </state>
       </provider>

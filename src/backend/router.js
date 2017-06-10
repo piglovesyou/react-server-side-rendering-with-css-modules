@@ -14,13 +14,6 @@ module.exports.unloadModulesMiddleware = (_, __, next) => (unloadModules_(), nex
 module.exports.loadModulesMiddleware = (_, __, next) => (loadModules_(), next());
 
 function defaultRouteMiddleware(req, res) {
-
-  const match = matchPath(req.url, {
-    path: '/',
-    exact: false,
-    strict: false,
-  });
-
   const data = {
     title: 'Express',
     messages: ['yeah!', 'baam!', 'baaa!'],
@@ -28,7 +21,7 @@ function defaultRouteMiddleware(req, res) {
 
   Store._state = data;
   const html = renderToString(React.createElement(StaticRouter, {
-    location: match.url,
+    location: req.url,
     context: {}
   }, React.createElement(Application, data)));
   Store._state = null;

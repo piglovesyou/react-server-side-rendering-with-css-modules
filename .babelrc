@@ -1,4 +1,5 @@
 {
+  "only": "./src/components",
   "presets": [
     "react"
   ],

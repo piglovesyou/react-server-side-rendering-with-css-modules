@@ -40,6 +40,7 @@ function unloadModules_() {
 function loadModules_() {
   layout = require('../layout').default;
   Store = require('../stores/application').default;
+  require('babel-register'); // For only JSXs in '../components'
   Application = require('../components/application').default;
 }
 

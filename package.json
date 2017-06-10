@@ -6,7 +6,7 @@
     "dev": "BABEL_DISABLE_CACHE=1 nodemon --watch src/backend --exec babel-node -- ./src/main",
     "test": "BABEL_DISABLE_CACHE=1 wdio wdio.conf.js",
     "build:server": "BABEL_DISABLE_CACHE=1 babel -d lib src",
-    "build:client": "webpack --config webpack-config/client.js",
+    "build:client": "webpack --config transpile-configs/client.js",
     "build": "npm run build:server && npm run build:client",
     "prepublish": "NODE_ENV=production npm run build"
   },
@@ -18,7 +18,6 @@
     "compression": "^1.6.2",
     "express": "~4.15.3",
     "morgan": "~1.8.2",
-    "q": "^1.4.1",
     "react": "^15.2.0",
     "react-dom": "^15.2.0",
     "serve-favicon": "~2.4.3"
@@ -39,7 +38,6 @@
     "css-loader": "^0.28.4",
     "extract-text-webpack-plugin": "^2.1.2",
     "flux": "^3.1.2",
-    "glob": "^7.0.5",
     "node-sass": "^4.5.3",
     "nodemon": "^1.10.2",
     "react-router": "^4.1.1",

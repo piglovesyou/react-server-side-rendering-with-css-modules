@@ -5,8 +5,7 @@ const favicon = require('serve-favicon');
 const logger = require('morgan');
 const webpackDevMiddleware = require('webpack-dev-middleware');
 const webpack = require('webpack');
-const glob = require('glob');
-const webpackConfig = require('../../webpack-config/client');
+const webpackConfig = require('../../transpile-configs/client');
 const {defaultRouteMiddleware, unloadModulesMiddleware} = require('./router');
 
 const isProduction = process.env.NODE_ENV === 'production';

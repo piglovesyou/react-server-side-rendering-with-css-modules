@@ -1,4 +1,4 @@
-export default ([data, contentHTML]) => {
+module.exports.default = ([data, contentHTML]) => {
   return `<!DOCTYPE html>
 <html>
   <head>
@@ -11,4 +11,4 @@ export default ([data, contentHTML]) => {
     <script src="/javascripts/main.js"></script>
   </body>
 </html>`;
-}
+};

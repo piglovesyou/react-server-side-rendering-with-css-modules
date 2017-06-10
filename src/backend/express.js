@@ -1,18 +1,19 @@
-import Path from 'path';
-import express from 'express';
-import compression from 'compression';
-import favicon from 'serve-favicon';
-import logger from 'morgan';
-import webpackDevMiddleware from "webpack-dev-middleware";
-import webpack from "webpack";
-import glob from 'glob';
-import webpackConfig from '../../webpack-config/client';
-import router, {loadModules, unloadModules} from './router';
+const Path = require('path');
+const express = require('express');
+const compression = require('compression');
+const favicon = require('serve-favicon');
+const logger = require('morgan');
+const webpackDevMiddleware = require('webpack-dev-middleware');
+const webpack = require('webpack');
+const glob = require('glob');
+const webpackConfig = require('../../webpack-config/client');
+const {defaultRouteMiddleware, loadModulesMiddleware, unloadModulesMiddleware} = require('./router');
 
 const isProduction = process.env.NODE_ENV === 'production';
 const app = express();
 app.set('port', normalizePort(process.env.PORT || '3000'));
 app.use(logger('dev'));
+app.use(favicon(Path.resolve(__dirname, './favicon.ico')));
 
 // import bodyParser from 'body-parser';
 // import cookieParser from 'cookie-parser';
@@ -31,8 +32,8 @@ app.use(express.static(Path.join(__dirname, '../../public')));
 
 // Handle browser GET accesses
 app.get('*', isProduction
-    ? router
-    : [unloadModules, loadModules, router]);
+    ? defaultRouteMiddleware
+    : [unloadModulesMiddleware, loadModulesMiddleware, defaultRouteMiddleware]);
 
 // Handle 404
 app.use((req, res, next) => {
@@ -42,10 +43,10 @@ app.use((req, res, next) => {
 });
 
 // Handle errors
-app.use(isProduction ? (err, req, res, next) => {
+app.use(isProduction ? (err, req, res) => {
   res.status(err.status || 500);
   res.send('error;)');
-} : (err, req, res, next) => {
+} : (err, req, res) => {
   console.error(err);
   res.status(err.status || 500);
   res.send(`${err.message}
@@ -53,7 +54,7 @@ app.use(isProduction ? (err, req, res, next) => {
 ${err.stack}`);
 });
 
-export default app;
+module.exports = app;
 
 function normalizePort(val) {
   const port = parseInt(val, 10);

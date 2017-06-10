@@ -1,5 +1,5 @@
-import dispatcher from '../dispatcher';
-import {ReduceStore} from 'flux/utils';
+const dispatcher = require('../dispatcher').default;
+const {ReduceStore} = require('flux/utils');
 
 class Store extends ReduceStore {
   getInitialState() {
@@ -25,4 +25,4 @@ class Store extends ReduceStore {
   }
 }
 
-export default new Store(dispatcher);
+module.exports.default = new Store(dispatcher);

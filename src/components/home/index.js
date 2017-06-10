@@ -1,7 +1,7 @@
-import React from 'react';
-import s from './index.sass';
+const React = require('react');
+const s = require('./index.sass');
 
-export default function Home(props) {
+module.exports.default = function Home(props) {
   return (
     <div className={s.root}>
       <h2>Home...</h2>

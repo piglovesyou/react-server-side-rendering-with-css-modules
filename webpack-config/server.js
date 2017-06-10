@@ -9,7 +9,7 @@ module.exports = {
         "test": /\.sass$/,
         loaders: [
           cssLoaderConfig,
-          'sass'
+          'sass-loader'
         ]
       }
     ]

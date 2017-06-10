@@ -1,1 +1,1 @@
-import "./backend/server";
+require('./backend/server');

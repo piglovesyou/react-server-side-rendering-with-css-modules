@@ -1,6 +1,6 @@
-import {Dispatcher} from 'flux';
+const {Dispatcher} = require('flux');
 
 const instance = new Dispatcher();
 
-export default instance;
-export const dispatch = instance.dispatch.bind(instance);
+module.exports.default = instance;
+module.exports.dispatch = instance.dispatch.bind(instance);

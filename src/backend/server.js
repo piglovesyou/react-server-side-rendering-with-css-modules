@@ -1,5 +1,5 @@
-import express from './express';
-import http from 'http';
+const express = require('./express');
+const http = require('http');
 
 const debug = require('debug')('site:server');
 const port = express.get('port');

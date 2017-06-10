@@ -1,12 +1,12 @@
-import React from 'react';
-import s from './index.sass';
-import {Link, IndexLink} from 'react-router';
+const React = require('react');
+const s = require('./index.sass');
+const {Link} = require('react-router-dom');
 
-export default function Navigation(props) {
+module.exports.default = function Navigation(props) {
   return (
     <div className={`${s.root} ${props.className || ''}`}>
       <ul>
-        <li><IndexLink to="/">Home</IndexLink></li>
+        <li><Link to="/">Home</Link></li>
         <li><Link to="/about">About</Link></li>
       </ul>
     </div>

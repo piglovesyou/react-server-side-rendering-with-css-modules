@@ -2,7 +2,6 @@ const isProduction = process.env.NODE_ENV === 'production';
 
 const webpack = require('webpack');
 const Path = require('path');
-const FS = require('fs');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const CompressionPlugin = require("compression-webpack-plugin");
 const cssLoaderConfig = require('./css-loader')[isProduction ? 'production' : 'develop'];
@@ -19,7 +18,7 @@ module.exports = {
       {
         test: /\.jsx?$/,
         exclude: /(node_modules|bower_components)/,
-        loader: 'babel',
+        loader: 'babel-loader',
         query: {
           "presets": [ "react" ],
           "plugins": [
@@ -32,19 +31,17 @@ module.exports = {
       },
       {
         test: /\.sass$/,
-        // loaders: [
-        //   cssLoaderConfig,
-        //   'sass',
-        // ],
         loader: ExtractTextPlugin.extract([
           cssLoaderConfig,
-          'sass-loader',
+          {
+            loader: 'sass-loader',
+            options: {
+              indentedSyntax: true,
+            }
+          },
         ]),
       },
     ]
-  },
-  sassLoader: {
-    indentedSyntax: true,
   },
   plugins: [
     new ExtractTextPlugin('stylesheets/main.css'),

@@ -1,7 +1,7 @@
-import React from 'react';
-import s from './index.sass';
+const React = require('react');
+const s = require('./index.sass');
 
-export default function Toolbar(props) {
+module.exports.default = function Toolbar(props) {
   return (
     <div className={s.root}>
       <h1 className={s.title}>{props.title}</h1>

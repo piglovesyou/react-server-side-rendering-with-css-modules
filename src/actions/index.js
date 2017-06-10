@@ -1,7 +1,7 @@
-import {dispatch} from '../dispatcher';
+const {dispatch} = require('../dispatcher');
 
-export default {
+module.exports = {
   baam(message) {
     dispatch({ type: 'baam' });
   }
-}
+};

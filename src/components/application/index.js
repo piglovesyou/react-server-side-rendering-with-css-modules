@@ -1,23 +1,23 @@
-import React from 'react';
-import {Container} from 'flux/utils';
-import Store from '../../stores/application';
-import Actions from '../../actions';
-import Toolbar from '../toolbar';
-import Navigation from '../navigation';
-import s from './index.sass';
+const React = require('react');
+const {Container} = require('flux/utils');
+const {Route} = require('react-router-dom');
+const Store = require('../../stores/application').default;
+const Toolbar = require('../toolbar').default;
+const Navigation = require('../navigation').default;
+const About = require('../about').default;
+const Home = require('../home').default;
+const s = require('./index.sass');
 
 class Application extends React.Component {
   static getStores() {
     return [Store];
   }
 
-  static calculateState(prevState) {
+  static calculateState() {
     return Store.getState();
   }
 
   render() {
-    const {title, messages} = this.state;
-    
     // debugger;
     return (
       <div className={s.root}>
@@ -25,12 +25,13 @@ class Application extends React.Component {
         <div className={s.layoutMasterDetail}>
           <Navigation className={s.layoutMasterDetailMaster} />
           <div className={s.layoutMasterDetailDetail}>
-            {React.Children.map(this.props.children, (c) => React.cloneElement(c, this.state))}
+            <Route path='/' exact render={() => <Home {...this.state} />} />
+            <Route path='/about' render={() => <About {...this.state} />} />
           </div>
         </div>
       </div>
     );
   }
-};
+}
 
-export default Container.create(Application);
+module.exports.default = Container.create(Application);

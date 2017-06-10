@@ -2,21 +2,23 @@
 
 Project-template project. Bound technologies:
 
-* React
+* React v15.2
   * Server-Side rendering
-  * Mounting it on Client-Side
-  * `react-router` on both cilent and server
+  * Reuse the DOMs on Client-Side
+* React Router v4
+  * On both cilent and server
 * Flux
   * FlucContainer
   * ReduceStore
 * Webpack
-  * External CSS file with `extract-text-webpack-plugin`
+  * External CSS file with `extract-text-webpack-plugin` for fast HTML load
   * CSS Modules by `css-loader`
     * Shorten CSS className to reduce payload on `NODE_ENV=production`
-  * `webpack-dev-middleware` for `express` on `NODE_ENV=develop`
+  * `webpack-dev-middleware` on `express` for development use
   * `sass-loader`
 * Babel
-  * Precompile all and no `babel-node` on `NODE_ENV=production`
+  * For development, only compile JSXs for debugging easiness
+  * For production, compile all for speed
 
 ## Demo
 

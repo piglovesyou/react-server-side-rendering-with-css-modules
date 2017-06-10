@@ -18,7 +18,6 @@ class Application extends React.Component {
   }
 
   render() {
-    // debugger;
     return (
       <div className={s.root}>
         <Toolbar {...this.state} />

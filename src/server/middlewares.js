@@ -9,19 +9,14 @@ if (!isProduction) {
   require('babel-register')(
       Object.assign(babelrc, {
         only: Path.resolve(__dirname, '../client/components'),
-        plugins: babelrc.plugins.concat([
-          ["babel-plugin-webpack-loaders", {
-            "config": Path.resolve(__dirname, '../../transpile-configs/server.js'),
-            "verbose": false
-          }]
-        ]),
-        babelrc: false
+        babelrc: false,
+        sourceMaps: true
       })
   );
 }
 
 const React = require('react');
-const {StaticRouter, matchPath,} = require('react-router');
+const {StaticRouter} = require('react-router');
 const {renderToString} = require('react-dom/server');
 
 module.exports.default = isProduction

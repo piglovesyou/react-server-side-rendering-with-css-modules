@@ -3,6 +3,13 @@
     "react"
   ],
   "plugins": [
-    "transform-es2015-classes"
+    "transform-es2015-classes",
+    [
+      "babel-plugin-webpack-loaders",
+      {
+        "config": "./transpile-configs/server.js",
+        "verbose": false
+      }
+    ]
   ]
 }

@@ -6,11 +6,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5059f2ca-f28d-410c-836e-223a3ead6deb" name="Default" comment="m">
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/server/favicon.ico" afterPath="$PROJECT_DIR$/public/favicon.ico" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/codeStyleSettings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.babelrc" afterPath="$PROJECT_DIR$/.babelrc" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.travis.yml" afterPath="$PROJECT_DIR$/.travis.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/server/express.js" afterPath="$PROJECT_DIR$/src/server/express.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/client/components/application/index.js" afterPath="$PROJECT_DIR$/src/client/components/application/index.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/server/middlewares.js" afterPath="$PROJECT_DIR$/src/server/middlewares.js" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -26,35 +25,75 @@
       <file leaf-file-name="workspace.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-630">
-              <caret line="740" column="23" lean-forward="false" selection-start-line="740" selection-start-column="23" selection-end-line="740" selection-end-column="23" />
+            <state relative-caret-position="360">
+              <caret line="806" column="23" lean-forward="false" selection-start-line="806" selection-start-column="23" selection-end-line="806" selection-end-column="23" />
               <folding>
-                <marker date="1497110772000" expanded="true" signature="66539:66581" ph="..." />
-                <marker date="1497110772000" expanded="true" signature="66539:66599" ph="..." />
-                <marker date="1497110772000" expanded="true" signature="66539:66612" ph="..." />
-                <marker date="1497110772000" expanded="true" signature="66539:66627" ph="..." />
-                <marker date="1497110772000" expanded="true" signature="66662:67358" ph="..." />
-                <marker date="1497110772000" expanded="true" signature="66675:67343" ph="..." />
-                <marker date="1497110772000" expanded="true" signature="66710:67016" ph="..." />
-                <marker date="1497110772000" expanded="true" signature="66729:67001" ph="..." />
-                <marker date="1497110772000" expanded="true" signature="66803:66981" ph="..." />
-                <marker date="1497110772000" expanded="true" signature="66843:66947" ph="..." />
-                <marker date="1497110772000" expanded="true" signature="66864:66925" ph="..." />
-                <marker date="1497110772000" expanded="true" signature="67064:67329" ph="..." />
-                <marker date="1497110772000" expanded="true" signature="67083:67314" ph="..." />
-                <marker date="1497110772000" expanded="true" signature="67116:67294" ph="..." />
-                <marker date="1497110772000" expanded="true" signature="67156:67260" ph="..." />
-                <marker date="1497110772000" expanded="true" signature="67177:67238" ph="..." />
+                <marker date="1497112329000" expanded="true" signature="71418:71460" ph="..." />
+                <marker date="1497112329000" expanded="true" signature="71418:71478" ph="..." />
+                <marker date="1497112329000" expanded="true" signature="71418:71491" ph="..." />
+                <marker date="1497112329000" expanded="true" signature="71418:71506" ph="..." />
+                <marker date="1497112329000" expanded="true" signature="71541:72237" ph="..." />
+                <marker date="1497112329000" expanded="true" signature="71554:72222" ph="..." />
+                <marker date="1497112329000" expanded="true" signature="71589:71895" ph="..." />
+                <marker date="1497112329000" expanded="true" signature="71608:71880" ph="..." />
+                <marker date="1497112329000" expanded="true" signature="71682:71860" ph="..." />
+                <marker date="1497112329000" expanded="true" signature="71722:71826" ph="..." />
+                <marker date="1497112329000" expanded="true" signature="71743:71804" ph="..." />
+                <marker date="1497112329000" expanded="true" signature="71943:72208" ph="..." />
+                <marker date="1497112329000" expanded="true" signature="71962:72193" ph="..." />
+                <marker date="1497112329000" expanded="true" signature="71995:72173" ph="..." />
+                <marker date="1497112329000" expanded="true" signature="72035:72139" ph="..." />
+                <marker date="1497112329000" expanded="true" signature="72056:72117" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="package.json" pinned="false" current-in-tab="true">
+      <file leaf-file-name="middlewares.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/server/middlewares.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="270">
+              <caret line="18" column="19" lean-forward="false" selection-start-line="18" selection-start-column="19" selection-end-line="18" selection-end-column="19" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/client/components/application/index.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="135">
+              <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="package.json" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/package.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" column="4" lean-forward="false" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="4" />
+            <state relative-caret-position="-8">
+              <caret line="7" column="17" lean-forward="false" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="layout.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/client/layout.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="15">
+              <caret line="1" column="2" lean-forward="false" selection-start-line="1" selection-start-column="2" selection-end-line="1" selection-end-column="2" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="client.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/transpile-configs/client.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="210">
+              <caret line="14" column="23" lean-forward="false" selection-start-line="14" selection-start-column="23" selection-end-line="14" selection-end-column="23" />
               <folding />
             </state>
           </provider>
@@ -71,7 +110,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>=====</find>
       <find>======</find>
       <find>=======</find>
       <find>========</find>
@@ -101,6 +139,7 @@
       <find>fconsol</find>
       <find>con</find>
       <find>console.log</find>
+      <find>j</find>
     </findStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$/webpack-config</dir>
@@ -138,7 +177,6 @@
         <option value="$PROJECT_DIR$/wdio.conf.js" />
         <option value="$PROJECT_DIR$/src/client/stores/initial-state-provider.js" />
         <option value="$PROJECT_DIR$/src/client/stores/just-once-state-injector.js" />
-        <option value="$PROJECT_DIR$/src/client/components/application/index.js" />
         <option value="$PROJECT_DIR$/src/server/router.js" />
         <option value="$PROJECT_DIR$/webpack-config/server.js" />
         <option value="$PROJECT_DIR$/src/client/sass/global.sass" />
@@ -148,13 +186,15 @@
         <option value="$PROJECT_DIR$/src/server/env.js" />
         <option value="$PROJECT_DIR$/src/client/components/about/index.js" />
         <option value="$PROJECT_DIR$/src/client/components/home/index.js" />
-        <option value="$PROJECT_DIR$/.babelrc" />
         <option value="$PROJECT_DIR$/src/client/stores/application.js" />
         <option value="$PROJECT_DIR$/.travis.yml" />
-        <option value="$PROJECT_DIR$/src/server/middlewares.js" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/src/server/express.js" />
         <option value="$PROJECT_DIR$/.idea/workspace.xml" />
+        <option value="$PROJECT_DIR$/transpile-configs/server.js" />
+        <option value="$PROJECT_DIR$/.babelrc" />
+        <option value="$PROJECT_DIR$/src/client/components/application/index.js" />
+        <option value="$PROJECT_DIR$/src/server/middlewares.js" />
       </list>
     </option>
   </component>
@@ -225,6 +265,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -305,14 +347,38 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="stores" />
+              <option name="myItemId" value="components" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="react-server-side-rendering-with-css-modules" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="react-server-side-rendering-with-css-modules" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="client" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="components" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="application" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scratches" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -320,7 +386,7 @@
     <property name="nodejs_interpreter_path" value="$USER_HOME$/.nvm/versions/node/v7.10.0/bin/node" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.JSON" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.selected.package.eslint" value="" />
@@ -791,7 +857,7 @@
       <workItem from="1496980759995" duration="6644000" />
       <workItem from="1497018559808" duration="26180000" />
       <workItem from="1497074624999" duration="4375000" />
-      <workItem from="1497109934053" duration="843000" />
+      <workItem from="1497109934053" duration="2476000" />
     </task>
     <task id="LOCAL-00001" summary="use node 7">
       <created>1496971178232</created>
@@ -919,11 +985,18 @@
       <option name="project" value="LOCAL" />
       <updated>1497103716641</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="m">
+      <created>1497110809349</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1497110809349</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="55770000" />
+    <option name="totallyTimeSpent" value="57403000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="704" y="23" width="1216" height="871" extended-state="0" />
@@ -932,6 +1005,7 @@
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32862645" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -943,7 +1017,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3298647" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3299595" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.26916525" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -957,7 +1031,6 @@
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection Results" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3298647" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Dynamic Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3298647" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
@@ -1002,7 +1075,15 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="45" />
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/client/components/application/index.js</url>
+          <line>20</line>
+          <properties />
+          <option name="timeStamp" value="50" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="52" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1011,8 +1092,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/public/javascripts/main.js" />
-    <entry file="file://$PROJECT_DIR$/src/components/about/content/index.js" />
     <entry file="file://$PROJECT_DIR$/node_modules/flux/lib/FluxStore.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
@@ -1060,13 +1139,6 @@
     <entry file="file://$PROJECT_DIR$/src/stores/application.js" />
     <entry file="file://$PROJECT_DIR$/src/client.js" />
     <entry file="file://$PROJECT_DIR$/src/components/client-entrypoint.js" />
-    <entry file="file://$PROJECT_DIR$/webpack.config.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/home/index.js" />
     <entry file="file://$PROJECT_DIR$/test/specs/basics.js">
       <provider selected="true" editor-type-id="text-editor">
@@ -1121,13 +1193,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/webpack-config/server.js" />
-    <entry file="file://$PROJECT_DIR$/src/client/components/application/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="3" lean-forward="false" selection-start-line="13" selection-start-column="3" selection-end-line="13" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/webpack-config/client.js" />
     <entry file="file://$PROJECT_DIR$/src/server/env.js">
       <provider selected="true" editor-type-id="text-editor">
@@ -1144,25 +1209,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/client/layout.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/flux/lib/FluxContainer.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="299">
           <caret line="192" column="19" lean-forward="false" selection-start-line="192" selection-start-column="19" selection-end-line="192" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.babelrc">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -1211,14 +1261,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/server/middlewares.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
@@ -1237,33 +1279,89 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-630">
-          <caret line="740" column="23" lean-forward="false" selection-start-line="740" selection-start-column="23" selection-end-line="740" selection-end-column="23" />
+        <state relative-caret-position="360">
+          <caret line="806" column="23" lean-forward="false" selection-start-line="806" selection-start-column="23" selection-end-line="806" selection-end-column="23" />
           <folding>
-            <marker date="1497110772000" expanded="true" signature="66539:66581" ph="..." />
-            <marker date="1497110772000" expanded="true" signature="66539:66599" ph="..." />
-            <marker date="1497110772000" expanded="true" signature="66539:66612" ph="..." />
-            <marker date="1497110772000" expanded="true" signature="66539:66627" ph="..." />
-            <marker date="1497110772000" expanded="true" signature="66662:67358" ph="..." />
-            <marker date="1497110772000" expanded="true" signature="66675:67343" ph="..." />
-            <marker date="1497110772000" expanded="true" signature="66710:67016" ph="..." />
-            <marker date="1497110772000" expanded="true" signature="66729:67001" ph="..." />
-            <marker date="1497110772000" expanded="true" signature="66803:66981" ph="..." />
-            <marker date="1497110772000" expanded="true" signature="66843:66947" ph="..." />
-            <marker date="1497110772000" expanded="true" signature="66864:66925" ph="..." />
-            <marker date="1497110772000" expanded="true" signature="67064:67329" ph="..." />
-            <marker date="1497110772000" expanded="true" signature="67083:67314" ph="..." />
-            <marker date="1497110772000" expanded="true" signature="67116:67294" ph="..." />
-            <marker date="1497110772000" expanded="true" signature="67156:67260" ph="..." />
-            <marker date="1497110772000" expanded="true" signature="67177:67238" ph="..." />
+            <marker date="1497112329000" expanded="true" signature="71418:71460" ph="..." />
+            <marker date="1497112329000" expanded="true" signature="71418:71478" ph="..." />
+            <marker date="1497112329000" expanded="true" signature="71418:71491" ph="..." />
+            <marker date="1497112329000" expanded="true" signature="71418:71506" ph="..." />
+            <marker date="1497112329000" expanded="true" signature="71541:72237" ph="..." />
+            <marker date="1497112329000" expanded="true" signature="71554:72222" ph="..." />
+            <marker date="1497112329000" expanded="true" signature="71589:71895" ph="..." />
+            <marker date="1497112329000" expanded="true" signature="71608:71880" ph="..." />
+            <marker date="1497112329000" expanded="true" signature="71682:71860" ph="..." />
+            <marker date="1497112329000" expanded="true" signature="71722:71826" ph="..." />
+            <marker date="1497112329000" expanded="true" signature="71743:71804" ph="..." />
+            <marker date="1497112329000" expanded="true" signature="71943:72208" ph="..." />
+            <marker date="1497112329000" expanded="true" signature="71962:72193" ph="..." />
+            <marker date="1497112329000" expanded="true" signature="71995:72173" ph="..." />
+            <marker date="1497112329000" expanded="true" signature="72035:72139" ph="..." />
+            <marker date="1497112329000" expanded="true" signature="72056:72117" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="4" lean-forward="false" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="4" />
+        <state relative-caret-position="-8">
+          <caret line="7" column="17" lean-forward="false" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/transpile-configs/server.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="2" lean-forward="false" selection-start-line="15" selection-start-column="2" selection-end-line="15" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.babelrc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="10" lean-forward="false" selection-start-line="2" selection-start-column="10" selection-end-line="2" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webpack.config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/transpile-configs/client.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="23" lean-forward="false" selection-start-line="14" selection-start-column="23" selection-end-line="14" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/client/layout.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="2" lean-forward="false" selection-start-line="1" selection-start-column="2" selection-end-line="1" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/client/components/application/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/server/middlewares.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="19" lean-forward="false" selection-start-line="18" selection-start-column="19" selection-end-line="18" selection-end-column="19" />
           <folding />
         </state>
       </provider>

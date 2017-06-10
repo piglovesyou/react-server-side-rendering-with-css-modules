@@ -4,7 +4,7 @@ const deepmerge = require('deepmerge');
 const babelrc = JSON.parse(FS.readFileSync(Path.resolve(__dirname, '../../.babelrc')));
 const isProduction = process.env.NODE_ENV === 'production';
 
-if (isProduction) {
+if (!isProduction) {
   // Applied only for JSXs in '../components'
   require('babel-register')(
       Object.assign(babelrc, {

@@ -27,7 +27,5 @@ env:
 before_install:
   - "export DISPLAY=:99.0"
   - "sh -e /etc/init.d/xvfb start"
-  - "npm config set spin false"
-
-script:
   - "npm start &"
+  - "sleep 3"

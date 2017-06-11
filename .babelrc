@@ -7,7 +7,7 @@
     [
       "babel-plugin-webpack-loaders",
       {
-        "config": "./transpile-configs/server.js",
+        "config": "./webpack-configs/server.js",
         "verbose": false
       }
     ]

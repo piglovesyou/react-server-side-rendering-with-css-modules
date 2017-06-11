@@ -4,7 +4,7 @@ const webpack = require('webpack');
 const Path = require('path');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const CompressionPlugin = require("compression-webpack-plugin");
-const cssLoaderConfig = require('./css-loader')[isProduction ? 'production' : 'develop'];
+const cssLoaderConfig = require('./_css-loader')[isProduction ? 'production' : 'develop'];
 
 module.exports = {
   entry: './src/client/main',

@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "scripts": {
     "start": "NODE_ENV=production node ./lib/main",
-    "dev": "BABEL_DISABLE_CACHE=1 nodemon --watch src/backend --exec babel-node -- ./src/main",
+    "dev": "BABEL_DISABLE_CACHE=1 nodemon --watch src/server -- ./src/main",
     "test": "BABEL_DISABLE_CACHE=1 wdio wdio.conf.js",
     "build:server": "BABEL_DISABLE_CACHE=1 babel -d lib src",
     "build:client": "webpack --config webpack-configs/client.js",
